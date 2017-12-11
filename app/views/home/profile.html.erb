@@ -1,0 +1,30 @@
+<div class="centered_content">
+  <h1>City Rescue</h1>
+
+
+<div class="nav_bar">
+
+  <ul>
+    <a href="/profile"><li>Profile</a></li>
+    <a href="/home"><li>Home</a></li>
+
+    <%= link_to "Log Out", destroy_user_session_path, :method => :delete %>
+
+  </ul>
+
+</div>
+
+
+<div class="profile_content">
+  <p>
+    <%= image_tag "team/me2.jpg" %>
+    <h2>James De Francesco</h2>
+    <h3>Developer</h3>
+  </p>
+
+  <p>Bio goes here</p>
+
+  <p>Rating goes here</p>
+</div>
+
+</div>
