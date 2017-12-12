@@ -17,6 +17,7 @@
  .centered_content {
    justify-content: center;
    text-align: center;
+   padding-top: 0px;
    //background-color: gray;
  }
 
@@ -39,15 +40,16 @@
  .nav_bar {
    justify-content: center;
    text-align: center;
-     ul {
+   text-decoration: none;
+   padding-top: 0px;
 
-       display: inline;
-       text-align: center;
-       li {
-         padding: 1.5rem;
-         list-style-type: none;
-         display: inline-block;
+     p {
+
+         display: inline;
          text-align: center;
+         text-decoration: none;
+         padding: 0px;
+         list-style-type: none;
          font-size: 18px;
 
       &:hover {
@@ -55,8 +57,22 @@
         cursor: pointer;
 
       }
-    }
+
    }
+ }
+
+ .main_content {
+   display: inline;
+   font-size: 14px;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   color: gray;
+
+
+   -webkit-transform: translate(-50%, -50%);
+     -ms-transform: translate(-50%, -50%);
+         transform: translate(-50%, -50%);
  }
 
  .log_in_style {

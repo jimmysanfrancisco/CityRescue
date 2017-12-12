@@ -4,13 +4,12 @@
 
 <div class="nav_bar">
 
-  <ul>
-    <a href="/profile"><li>Profile</a></li>
-    <a href="/home"><li>Home</a></li>
-
+  <p>
+    <a href="/profile">Profile</a>
+    <a href="/home">Home</a>
     <%= link_to "Log Out", destroy_user_session_path, :method => :delete %>
 
-  </ul>
+  </p>
 
 </div>
 
