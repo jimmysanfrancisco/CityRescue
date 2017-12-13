@@ -1,17 +1,18 @@
-<div class="background">
+<section id="section_landing">
+    <div class="content-shell">
     <div class="centered_content">
       <h1 class="home_title">City Rescue</h1>
 
 
-    <div class="nav_bar">
+    <div class="footer_nav_links">
 
-      <p class="nav_links">
-    <a href="/home">Home</a>
-        <a href="/profile">Profile</a>
+      <ul>
+        <li><a href="/home">Home</a></li>
+        <li><a href="/profile">Profile</a></li>
 
-        <%= link_to "Log Out", destroy_user_session_path, :method => :delete %>
+        <li><%= link_to "Log Out", destroy_user_session_path, :method => :delete %></li>
 
-      </p>
+      </ul>
 
     </div>
 
@@ -29,4 +30,5 @@
     </div>
 
     </div>
+  </div>
 </div>
