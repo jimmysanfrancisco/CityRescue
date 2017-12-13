@@ -1,29 +1,32 @@
-<div class="centered_content">
-  <h1>City Rescue</h1>
+<div class="background">
+    <div class="centered_content">
+      <h1 class="home_title">City Rescue</h1>
 
 
-<div class="nav_bar">
+    <div class="nav_bar">
 
-  <p>
-    <a href="/profile">Profile</a>
+      <p class="nav_links">
     <a href="/home">Home</a>
-    <%= link_to "Log Out", destroy_user_session_path, :method => :delete %>
+        <a href="/profile">Profile</a>
 
-  </p>
+        <%= link_to "Log Out", destroy_user_session_path, :method => :delete %>
 
-</div>
+      </p>
+
+    </div>
 
 
-<div class="profile_content">
-  <p>
-    <%= image_tag "team/me2.jpg" %>
-    <h2>James De Francesco</h2>
-    <h3>Developer</h3>
-  </p>
+    <div class="profile_content">
+      <p>
+        <%= image_tag "team/me2.jpg" %>
+        <h2>James De Francesco</h2>
+        <h3>Helper</h3>
+      </p>
 
-  <p>Bio goes here</p>
+      <p>Bio goes here</p>
 
-  <p>Rating goes here</p>
-</div>
+      <p>Rating goes here</p>
+    </div>
 
+    </div>
 </div>

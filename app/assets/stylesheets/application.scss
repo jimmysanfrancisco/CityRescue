@@ -14,41 +14,68 @@
  *= require_self
  */
 
+.background {
+ background: #C0C0C0;
+ background-size: cover;
+ height: 100%;
+ width: 100%;
+
+}
+
  .centered_content {
    justify-content: center;
    text-align: center;
-   padding-top: 0px;
+
+   height: 100%;
+   width: 100%;
+
    //background-color: gray;
  }
 
+ .home_title {
+   color: #F08080;
+   font-family: Arial, Helvetica, sans-serif;
+   padding-top: 20px;
+
+ }
+
+
  .profile_content {
+   font-family: Arial, Helvetica, sans-serif;
+   color: #F08080;
+
    p {
+     font-family: Arial, Helvetica, sans-serif;
+     color: #F08080;
+
 
    }
    img {
-     height: 25%;
-     width: 25%;
+     height: 20%;
+     width: 20%;
    }
  }
 
- .landing_page {
-   background-image: image_url('images/background.jpeg');
-   background-size: cover;
-   background-position: center center;
- }
+
+
+
 
  .nav_bar {
    justify-content: center;
    text-align: center;
    text-decoration: none;
    padding-top: 0px;
+   font-family: Arial, Helvetica, sans-serif;
+
 
      p {
 
          display: inline;
+         font-family: Arial, Helvetica, sans-serif;
+
          text-align: center;
          text-decoration: none;
-         padding: 0px;
+         padding: 5px;
          list-style-type: none;
          font-size: 18px;
 
@@ -62,12 +89,34 @@
  }
 
  .main_content {
+  height: 100%;
+  width: 100%;
+
+
+   input[type=text] {
+
+
+      width: 100px;
+      -webkit-transition: width 0.4s ease-in-out;
+      transition: width 0.4s ease-in-out;
+  }
+
+  /* When the input field gets focus, change its width to 100% */
+  input[type=text]:focus {
+
+      width: 50%;
+  }
+
+   width: 100%;
+   height: 100%;
    display: inline;
    font-size: 14px;
-   position: absolute;
+
    top: 50%;
    left: 50%;
-   color: gray;
+  color: #F08080;
+   font-family: Arial, Helvetica, sans-serif;
+
 
 
    -webkit-transform: translate(-50%, -50%);
@@ -76,5 +125,47 @@
  }
 
  .log_in_style {
+  color: #F08080;
 
+   font-family: Arial, Helvetica, sans-serif;
+     //background: #2DD67D;
+     position: absolute;
+     margin: 0;
+     padding: 0;
+     left: 50%;
+     top: 50%;
+     width: 25%;
+     -webkit-transform: translate(-50%, -50%);
+       -ms-transform: translate(-50%, -50%);
+           transform: translate(-50%, -50%);
+
+     .h2 {
+         color: #3a2bc9;
+         font-size: 25px;
+         font-size: 2.5rem;
+         text-align: center;
+         justify-content: center;
+         padding: 1rem;
+     }
+
+     .field {
+         //color: red;
+         font-size: 15px;
+         font-size: 1.5rem;
+         text-align: center;
+         justify-content: center;
+         padding: 1rem;
+     }
+
+     .actions {
+         text-align: center;
+         justify-content: center;
+         padding: 1rem;
+     }
+
+     .devise_links {
+         text-align: center;
+         justify-content: center;
+         padding: 1rem;
+     }
  }
